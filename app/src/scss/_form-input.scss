@@ -1,0 +1,22 @@
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: $font-weight;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    appearance: none;
+    outline: none;
+
+    &::placeholder {
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: $font-weight;
+        color: #969696;
+    }
+}

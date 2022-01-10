@@ -1,0 +1,106 @@
+.header {
+    &__top {
+        height: $header__top-height;
+        background-color: $header__top-background-color;
+
+        .container {
+            height: 100%;
+        }
+    }
+
+    &__bottom {
+        height: $header__bottom-height;
+        background-color: $header__bottom-background-color;
+
+        .container {
+            height: 100%;
+        }
+    }
+
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-gap: 15px;
+    }
+
+    &__list {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-item {
+            font-size: 12px;
+            color: #969696;
+
+            &:not(:last-child) {
+                &::after {
+                    content: '|';
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    &__signup {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-gap: 10px;
+        font-size: 12px;
+        color: #969696;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #ffffff;
+        }
+
+        &-icon {
+            width: 14px;
+        }
+    }
+
+    &__project {
+        font-family: $project__font-family;
+        font-weight: $project__font-weight;
+        font-size: 36px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    &__menu {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-item {
+            height: 100%;
+        }
+
+        &-icon {
+            width: 19px;
+            color: #fff;
+        }
+
+        &-link {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #969696;
+            text-transform: uppercase;
+            padding: 0 20px;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                color: #fff;
+                background-color: #1F1F1F;
+            }
+        }
+    }
+}

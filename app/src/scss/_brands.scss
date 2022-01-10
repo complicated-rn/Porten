@@ -1,0 +1,22 @@
+.brands {
+    padding: 60px 0;
+    background-color: #0F0F0F;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 60px 30px;
+        margin-top: 60px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-image {
+            width: 75%;
+            object-fit: cover;
+        }
+    }
+}
